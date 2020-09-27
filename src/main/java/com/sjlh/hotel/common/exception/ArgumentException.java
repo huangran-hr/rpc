@@ -12,6 +12,6 @@ public class ArgumentException extends BusinessException {
     private static final long serialVersionUID = -5961619353798906031L;
 
     public ArgumentException(String message) {
-        super(message); 
+        super(message);
     }
 }
