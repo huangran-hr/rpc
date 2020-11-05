@@ -119,13 +119,26 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
 		<repository>
 			<id>sjlh</id>
 			<name>sjlh</name>
-			<url>http://192.168.1.35:8081/repository/releases/</url>
+			<url>https://nexus.mvmyun.com/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 </project>
